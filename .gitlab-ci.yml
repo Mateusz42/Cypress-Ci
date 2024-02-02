@@ -9,3 +9,7 @@ test:
   script:
     - npm ci
     - npm run cypress:run
+  artifacts:
+    when: always
+    paths:
+      - cypress/screenshots/*.png
